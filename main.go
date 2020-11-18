@@ -1,12 +1,9 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/mskutle/hello-go/utils"
+	"github.com/mskutle/hello-go/server"
 )
 
 func main() {
-	name := "Bobby"
-	fmt.Println(utils.Reverse(name))
+	server.StartServer(":3000")
 }
