@@ -5,7 +5,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/mskutle/hello-go/controllers"
-	customMiddleware "github.com/mskutle/hello-go/middleware"
+	// customMiddleware "github.com/mskutle/hello-go/middleware"
 )
 
 type MyValidator struct {
