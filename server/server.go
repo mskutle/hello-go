@@ -21,7 +21,7 @@ func StartServer(port string) *echo.Echo {
 	server.Validator = &MyValidator{validator: validator.New()}
 	server.Use(middleware.Logger())
 	server.Use(middleware.Recover())
-	server.Use(customMiddleware.MongoDb())
+	// server.Use(customMiddleware.MongoDb())
 
 	server.GET("/", controllers.Root)
 
